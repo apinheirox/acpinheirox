@@ -10,14 +10,22 @@
 <body>
     <header>
         <img src="./images/Logo-AP.webp" alt="Logo Antônio Pinheiro">
-        <nav>
+        <nav class="main-nav">
             <li><a href="#">SERVIÇOS</a></li>
             <li><a href="#">PORTFÓLIO</a></li>
             <li><a href="#">COMO FUNCIONA</a></li>
             <li><a href="#">SOBRE</a></li>
         </nav>
         <a href="#"><button>CONTATO</button></a>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     </header>
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+            <li><a href="#">SERVIÇOS</a></li>
+            <li><a href="#">PORTFÓLIO</a></li>
+            <li><a href="#">COMO FUNCIONA</a></li>
+            <li><a href="#">SOBRE</a></li>
+    </div>
     <section id="home">
         <div class="container">
             <div class="info">
@@ -28,11 +36,22 @@
             </div>
             <div class="img">
                 <img src="./images/Desktop-home.webp" alt="" class="float">
+                <img src="./images/Mobile-home.png" alt="" class="float img-mobile">
             </div>
         </div>
         <div class="mouse">
             <img src="./images/mouse.png" alt="" class="float2">
         </div>
     </section>
+    <script>
+        function toggleMenu() {
+    var sidebar = document.getElementById("sidebar");
+    if (sidebar.style.width === "250px") {
+        sidebar.style.width = "0";
+    } else {
+        sidebar.style.width = "250px";
+    }
+}
+    </script>
 </body>
 </html>
