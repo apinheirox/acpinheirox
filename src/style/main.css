@@ -120,6 +120,9 @@ nav a{
     text-decoration: none;
     color: black;
 }
+#home{
+    height: 100dvh;
+}
 #home .container{
     display: flex;
     justify-content: space-between;
@@ -196,6 +199,71 @@ nav a{
     justify-content: center;
     margin: 0 auto;
 }
+#servicos{
+    background-color: #006994;
+    height: 100dvh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+#servicos .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+#servicos .info h2{
+    color: #ffffff;
+    font-family: 'Aron';
+    font-size: 16px;
+}
+#servicos .info h1{
+    font-family: 'Orbitron';
+    font-size: 48px;
+    color: #98FF98;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 700px;
+}
+#servicos .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    width: 1200px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+#servicos .card{
+    background-color: white;
+    width: 300px;
+    height: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 4px;
+}
+#servicos .card .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+#servicos .card h3{
+    font-family: 'Orbitron';
+    font-weight: normal;
+    margin-bottom: 8px;
+    width: 180px;
+}
+#servicos .card p{
+    font-family: 'Aron';
+    font-size: 12px;
+}
 @keyframes lightbeam {
     0% {
     left: -100%;
@@ -235,7 +303,10 @@ nav a{
         display: none;
     }
     header{
-        width: 90%;
+        width: 100%;
+    }
+    header img{
+        width: 130px;
     }
     header button{
         display: none;
@@ -244,30 +315,32 @@ nav a{
         display: flex;
         justify-content: end;
         align-items: center;
-        margin: 80px auto;
+        margin: 0 auto;
+        width: 100%;
     }
     #home .info{
-        width: 90%;
+        width: 280px;
+        margin: 0 auto;
     }
     #home .container{
         flex-direction: column;
-        width: 80%;
+        width: 300px;
         justify-content: first baseline;
         margin: 0 auto;
     }
     #home .info h1{
-        font-size: 34px;
-        width: 400px;
+        font-size: 30px;
+        width: 300px;
     }
     #home .info h2{
         font-size: 14px;
     }
     #home .info p{
-        font-size: 12px;
-        width: 400px;
+        font-size: 13px;
+        width: 300px;
     }
     #home .info button{
-        width: 80%;
+        width: 100%;
         font-size: 12px;
     }
     #home img{
@@ -276,8 +349,28 @@ nav a{
     #home .img-mobile{
         position: relative;
         display: flex;
-        left: 10%;
         margin: 50px auto;
+    }
+    #servicos{
+        height: 100%;
+    }
+    #servicos .container{
+        width: 300px;
+        grid-template-columns: 1fr;
+    }
+    #servicos .info{
+        margin: 50px auto;
+        text-align: center;
+        width: 300px;
+    }
+    #servicos .info h1{
+        font-size: 30px;
+        width: 350px;
+    }
+    #servicos .info h2{
+        font-size: 13px;
+        width: 300px;
+        margin-bottom: 8px;
     }
 }
 @media (min-width: 576px) and (max-width: 767.98px){
