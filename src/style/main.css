@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFFFF0;
+}
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../../fonts/Orbitron-VariableFont_wght.woff') format('woff');
+}
+@font-face {
+    font-family: 'Aron';
+    src: url('../../fonts/Aron-ExtraBold-BF6556dd3e2d89f.woff') format('woff');
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Aron';
+}
+header img{
+    width: 170px;
+}
+header a{
+    text-decoration: none;
+}
+header button{
+    width: 135px;
+    height: 50px;
+    border: 3px solid #FF4500;
+    border-radius: 10px;
+    font-family: 'Aron';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    font-size: 14px;
+}
+nav{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    justify-content: center;
+    font-size: 16px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+#home .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 80dvh;
+}
+#home .info{
+    width: 100%;
+}
+#home .info h2{
+    color: #FF4500;
+    font-family: 'Aron';
+    font-size: 16px;
+}
+#home .info h1{
+    font-family: 'Orbitron';
+    font-size: 48px;
+    color: #006994;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 600px;
+}
+#home .info p{
+    color: black;
+    font-family: 'Aron';
+    font-size: 16px;
+    margin-bottom: 15px;
+    width: 450px;
+}
+#home .info button{
+    position: relative;
+    padding: 10px 20px;
+    width: 70%;
+    height: 45px;
+    background: linear-gradient(to right, #EF5A23, #CF4D1D);
+    color: white;
+    font-family: 'Aron';
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+#home .img{
+    margin: 0 auto;
+    position: relative;
+    left: 0%;
+}
+.float {
+    animation: float 4s ease-in-out infinite;
+}
+#home .info button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transform: skewX(-25deg);
+    transition: left 0.5s;
+    animation: lightbeam 2s infinite;
+}
+
+@keyframes lightbeam {
+    0% {
+    left: -100%;
+    }
+    100% {
+    left: 100%;
+    }
+}
+@keyframes float {
+    0% {
+    transform: translateY(0);
+    }
+    50% {
+    transform: translateY(-10px);
+    }
+    100% {
+    transform: translateY(0);
+    }
+}
