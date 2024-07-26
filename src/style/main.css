@@ -306,7 +306,7 @@ nav a{
 }
 #como .card h3{
     font-family: 'Orbitron';
-    font-size: 18px;
+    font-size: 20px;
 }
 #como .card p{
     font-family: 'Aron';
@@ -339,6 +339,42 @@ nav a{
     border-radius: 10px;
     font-size: 14px;
     cursor: pointer;
+}
+#numeros{
+    background-color: #006994;
+    height: 30dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#numeros .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#numeros .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+}
+#numeros .card h2{
+    font-size: 60px;
+    color: white;
+    font-family: 'Orbitron';
+    margin-bottom: 5px;
+}
+#numeros .card p{
+    font-family: 'Aron';
+    color: #D8D8D8;
+    max-width: 150px;
 }
 @keyframes lightbeam {
     0% {
