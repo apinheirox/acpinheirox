@@ -264,6 +264,84 @@ nav a{
     font-family: 'Aron';
     font-size: 12px;
 }
+#como{
+    height: 100dvh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#como .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    width: 1200px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+#como .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+#como .info h1{
+    font-family: 'Orbitron';
+    font-size: 48px;
+    color: #006994;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 1100px;
+}
+#como .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 20px;
+
+}
+#como .card h3{
+    font-family: 'Orbitron';
+    font-size: 18px;
+}
+#como .card p{
+    font-family: 'Aron';
+    font-size: 13px;
+    width: 350px;
+
+}
+#como .icon-como{
+    background: linear-gradient(to right, #EF5A23, #992900);
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+#como .btn{
+    margin: 100px auto;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+#como .btn button{
+    position: relative;
+    padding: 10px 20px;
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(to right, #EF5A23, #CF4D1D);
+    color: white;
+    font-family: 'Aron';
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
 @keyframes lightbeam {
     0% {
     left: -100%;
@@ -331,6 +409,7 @@ nav a{
     #home .info h1{
         font-size: 30px;
         width: 300px;
+        font-weight: bold;
     }
     #home .info h2{
         font-size: 14px;
@@ -343,16 +422,20 @@ nav a{
         width: 100%;
         font-size: 12px;
     }
-    #home img{
-        display: none;
-    }
-    #home .img-mobile{
+    #home .mouse{
         position: relative;
-        display: flex;
-        margin: 50px auto;
+        top: 50%;
+        left: -42%;
+    }
+    #home .mouse img{
+        width: 33px;
+    }
+    #home .img img{
+        width: 400px;
     }
     #servicos{
         height: 100%;
+        margin: 50px auto;
     }
     #servicos .container{
         width: 300px;
@@ -368,8 +451,8 @@ nav a{
         width: 350px;
     }
     #servicos .info h2{
-        font-size: 13px;
-        width: 300px;
+        font-size: 12px;
+        width: 250px;
         margin-bottom: 8px;
     }
 }
