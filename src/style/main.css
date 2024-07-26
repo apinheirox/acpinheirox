@@ -340,6 +340,18 @@ nav a{
     font-size: 14px;
     cursor: pointer;
 }
+#como .btn button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transform: skewX(-25deg);
+    transition: left 0.5s;
+    animation: lightbeam 2s infinite;
+}
 #numeros{
     background-color: #006994;
     height: 30dvh;
