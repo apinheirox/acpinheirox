@@ -158,9 +158,85 @@
             </div>
         </div>
     </section>
-    <script id="portfolio">
-
-    </script>
+    <section id="portfolio">
+        <div class="info">
+            <h2>DESENVOLVIMENTO PERSONALIZADO</h2>
+            <h1>DESENVOLVENDO SOLUÇÕES DIGITAIS DE ALTO IMPACTO</h1>
+        </div>
+        <div class="container">
+            <div class="card">
+                <h3>Lilox Sunglass</h3>
+                <img src="./images/portfolio-1.webp" alt="Portfolio do site da Lilox Sunglass">
+                <a href="https://liloxsunglass.com/" target="_blank"><button>Visite o site</button></a>
+            </div>
+            <div class="card">
+                <h3>EcoBank</h3>
+                <img src="./images/portfolio-2.webp" alt="Portfolio do site da Lilox Sunglass">
+                <a href="https://ecobank-antonio-pinheiros-projects.vercel.app/" target="_blank"><button>Visite o site</button></a>
+            </div>
+            <div class="card">
+                <h3>Portfólio</h3>
+                <img src="./images/portfolio-3.webp" alt="Portfolio do site da Lilox Sunglass">
+                <a href="https://acpinheirox.vercel.app/" target="_blank"><button>Visite o site</button></a>
+            </div>
+            <div class="card">
+                <h3>OralCare</h3>
+                <img src="./images/portfolio-4.webp" alt="Portfolio do site da Lilox Sunglass">
+                <a href="https://apinheirox.github.io/projeto-oralcare/" target="_blank"><button>Visite o site</button></a>
+            </div>
+        </div>
+    </section>
+    <section id="vamos">
+        <div class="container">
+            <h1>VAMOS CONVERSAR SOBRE SEU PROJETO?</h1>
+            <a href="#"><button>FALAR COM O ESPECIALISTA</button></a>
+        </div>
+    </section>
+    <section id="faq">
+        <div class="container">
+            <h1>PERGUNTAS FREQUENTES</h1>
+            <div class="faq-container">
+                <div class="faq">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>1 - Quanto tempo leva para criar um site?</span>
+                            <span class="arrow">ᐯ</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>O tempo para criar um site depende da complexidade do seu projeto. Geralmente, pode levar de 8 a 15 dias.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>2 - Vocês oferecem suporte pós-lançamento?</span>
+                            <span class="arrow">ᐯ</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sim, oferecemos suporte de até 15 dias pós-lançamento para garantir que seu site funcione perfeitamente e para ajudar com qualquer dúvida que possa surgir.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>3 - Quais são os custos para manter meu site?</span>
+                            <span class="arrow">ᐯ</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Os custos para manter um site podem incluir hospedagem, manutenção, atualizações e suporte contínuo. Os valores variam dependendo do serviço escolhido.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>4 - Meu site será otimizado?</span>
+                            <span class="arrow">ᐯ</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sim, todos os sites que criamos são otimizados para SEO, velocidade de carregamento e responsividade para dispositivos móveis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script>
         function toggleMenu() {
     var sidebar = document.getElementById("sidebar");
@@ -170,6 +246,26 @@
         sidebar.style.width = "250px";
     }
 }
+
+document.querySelectorAll('.faq-question').forEach(item => {
+    item.addEventListener('click', event => {
+        const faqItem = item.parentElement;
+        const answer = faqItem.querySelector('.faq-answer');
+
+        if (faqItem.classList.contains('open')) {
+            answer.style.maxHeight = null;
+            faqItem.classList.remove('open');
+        } else {
+            document.querySelectorAll('.faq-item').forEach(el => {
+                el.classList.remove('open');
+                el.querySelector('.faq-answer').style.maxHeight = null;
+            });
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+            faqItem.classList.add('open');
+        }
+    });
+});
+
     </script>
 </body>
 </html>

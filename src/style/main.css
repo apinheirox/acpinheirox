@@ -22,7 +22,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1130px;
     margin: 0 auto;
     padding: 20px;
     font-family: 'Aron';
@@ -127,7 +127,7 @@ nav a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     height: 80dvh;
 }
@@ -201,11 +201,12 @@ nav a{
 }
 #servicos{
     background-color: #006994;
-    height: 100dvh;
+    height: 900px;
     justify-content: center;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    align-items: center;
 }
 #servicos .info{
     display: flex;
@@ -233,10 +234,10 @@ nav a{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
-    width: 1200px;
+    width: 1000px;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
 #servicos .card{
     background-color: white;
@@ -265,7 +266,7 @@ nav a{
     font-size: 12px;
 }
 #como{
-    height: 100dvh;
+    height: 900px;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -275,7 +276,7 @@ nav a{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
-    width: 1200px;
+    width: 1100px;
     justify-content: center;
     align-items: center;
     gap: 30px;
@@ -291,11 +292,11 @@ nav a{
 }
 #como .info h1{
     font-family: 'Orbitron';
-    font-size: 48px;
+    font-size: 44px;
     color: #006994;
     font-weight: bold;
     margin-bottom: 10px;
-    width: 1100px;
+    width: 1000px;
 }
 #como .card{
     display: flex;
@@ -363,7 +364,7 @@ nav a{
 #numeros .container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 1200px;
+    width: 1100px;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
@@ -378,7 +379,7 @@ nav a{
     margin: 0 auto;
 }
 #numeros .card h2{
-    font-size: 60px;
+    font-size: 45px;
     color: white;
     font-family: 'Orbitron';
     margin-bottom: 5px;
@@ -387,6 +388,181 @@ nav a{
     font-family: 'Aron';
     color: #D8D8D8;
     max-width: 150px;
+}
+#portfolio{
+    margin: 150px auto;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#portfolio .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+#portfolio .info h2{
+    color: #FF4500;
+    font-family: 'Aron';
+    font-size: 16px;
+}
+#portfolio .info h1{
+    font-family: 'Orbitron';
+    font-size: 40px;
+    color: #006994;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 700px;
+}
+#portfolio .container{
+    width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+#portfolio .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+#portfolio .card h3{
+    font-family: 'Orbitron';
+    font-size: 30px;
+    font-weight: 400;
+}
+#portfolio .card img{
+    width: 560px;
+}
+#portfolio .card button{
+    position: relative;
+    padding: 10px 20px;
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(to right, #EF5A23, #CF4D1D);
+    color: white;
+    font-family: 'Aron';
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+#vamos{
+    background-color: #006994;
+    height: 40dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#vamos .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+#vamos .container h1{
+    color: white;
+    font-family: 'Orbitron';
+    font-size: 40px;
+    width: 700px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#vamos .container button{
+    position: relative;
+    padding: 10px 20px;
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(to right, #EF5A23, #CF4D1D);
+    color: white;
+    font-family: 'Aron';
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+#faq{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 700px;
+    margin: 0 auto;
+}
+#faq .container {
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#faq h1 {
+    text-align: center;
+    color: #005b7f;
+    width: 600px;
+    font-size: 40px;
+    font-family: 'Orbitron';
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#faq .faq-item {
+    border: 2px solid #FF4500;
+    border-radius: 8px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+#faq .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 16px;
+    color: #005b7f;
+    font-family: 'Aron';
+}
+
+#faq .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 10px;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+#faq .faq-answer p {
+    margin: 0 auto;
+    font-family: 'Aron';
+    color: #383838;
+}
+
+#faq .arrow {
+    font-size: 1.5em;
+    transition: transform 0.3s ease;
+}
+
+#faq .faq-item.open .faq-answer {
+    max-height: 250px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+#faq .faq-item.open .arrow {
+    transform: rotate(180deg);
 }
 @keyframes lightbeam {
     0% {
