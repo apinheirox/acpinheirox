@@ -564,6 +564,131 @@ nav a{
 #faq .faq-item.open .arrow {
     transform: rotate(180deg);
 }
+#sobre{
+    background-color: #006994;
+    width: 100%;
+    height: 650px;
+}
+#sobre .container{
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+#sobre .container-dir h1{
+    font-size: 40px;
+    font-family: 'Orbitron';
+    color: white;
+    margin-bottom: 10px;
+}
+#sobre .container-dir h2{
+    font-size: 16px;
+    color: #98FF98;
+    font-family: 'Aron';
+    margin-bottom: 14px;
+}
+#sobre .container-dir p{
+    color: white;
+    font-size: 17px;
+    font-family: 'Aron';
+    width: 420px;
+    margin-bottom: 5px;
+}
+#sobre .container-dir button{
+    position: relative;
+    padding: 10px 20px;
+    width: 80%;
+    height: 45px;
+    background: linear-gradient(to right, #EF5A23, #CF4D1D);
+    color: white;
+    font-family: 'Aron';
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+#final{
+    height: 80dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+#final .container{
+    width: 1000px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+}
+#final .card{
+    border: 2px solid #FF4500;
+    height: 250px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#final .card h1{
+    font-family: 'Orbitron';
+    color: #006994;
+    font-size: 40px;
+    width: 600px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#final .card p{
+    color: black;
+    font-size: 15px;
+    font-family: 'Aron';
+    width: 500px;
+    margin-bottom: 15px;
+}
+#final .card button{
+    position: relative;
+    padding: 10px 20px;
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(to right, #EF5A23, #CF4D1D);
+    color: white;
+    font-family: 'Aron';
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+#final .card button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transform: skewX(-25deg);
+    transition: left 0.5s;
+    animation: lightbeam 2s infinite;
+}
+footer{
+    height: 15dvh;
+}
+footer .container{
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+footer .meio p{
+    font-family: 'Aron';
+}
 @keyframes lightbeam {
     0% {
     left: -100%;
