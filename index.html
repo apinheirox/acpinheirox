@@ -310,6 +310,55 @@ document.querySelectorAll('.faq-question').forEach(item => {
         }
     });
 });
+document.addEventListener("DOMContentLoaded", function() {
+  const lazyImages = document.querySelectorAll("img.lazy");
+
+  const imageObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const image = entry.target;
+        image.src = image.dataset.src;
+        image.classList.remove("lazy");
+        imageObserver.unobserve(image);
+      }
+    });
+  });
+
+  lazyImages.forEach(image => {
+    imageObserver.observe(image);
+  });
+});
+function debounce(func, wait) {
+  let timeout;
+  return function(...args) {
+    const later = () => {
+      clearTimeout(timeout);
+      func(...args);
+    };
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+  };
+}
+
+function throttle(func, limit) {
+  let inThrottle;
+  return function(...args) {
+    if (!inThrottle) {
+      func(...args);
+      inThrottle = true;
+      setTimeout(() => (inThrottle = false), limit);
+    }
+  };
+}
+
+// Uso
+window.addEventListener("resize", debounce(() => {
+  console.log("Window resized");
+}, 250));
+
+window.addEventListener("scroll", throttle(() => {
+  console.log("Window scrolled");
+}, 100));
 
     </script>
 </body>
