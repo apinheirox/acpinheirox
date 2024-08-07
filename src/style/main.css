@@ -260,11 +260,12 @@ nav a{
     justify-content: center;
     margin-bottom: 10px;
 }
-#servicos .card h3{
+#servicos .card h2{
     font-family: 'Orbitron';
     font-weight: normal;
     margin-bottom: 8px;
-    width: 180px;
+    width: 190px;
+    font-size: 22px;
 }
 #servicos .card p{
     font-family: 'Aron';
