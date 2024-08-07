@@ -151,7 +151,7 @@ nav a{
     color: black;
     font-family: 'Aron';
     font-size: 16px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     width: 450px;
 }
 #home .info button{
@@ -369,6 +369,9 @@ nav a{
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+#numeros .card img{
+    animation: grow 2s infinite alternate;
 }
 #numeros .card{
     display: flex;
@@ -689,6 +692,12 @@ footer .container{
 footer .meio p{
     font-family: 'Aron';
 }
+footer .dir img{
+    transition: all 0.5s ease-in-out;
+}
+footer .dir img:hover{
+    transform: translateY(-7px);
+}
 @keyframes lightbeam {
     0% {
     left: -100%;
@@ -719,7 +728,14 @@ footer .meio p{
     transform: translateY(0);
     }
 }
-
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
 @media (max-width: 575.98px){
     .menu-toggle {
         display: block;
