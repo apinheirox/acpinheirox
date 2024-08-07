@@ -629,7 +629,7 @@ nav a{
 }
 #final .card{
     border: 2px solid #FF4500;
-    height: 250px;
+    height: 350px;
     width: 800px;
     display: flex;
     justify-content: center;
