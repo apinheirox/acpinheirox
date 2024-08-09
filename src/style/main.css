@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{
+html, body{
     overflow-x: hidden;
 }
 body{
@@ -915,7 +915,7 @@ footer .dir img:hover{
     }
 }
 @media (min-width: 576px) and (max-width: 767.98px){
-    html{
+    html, body{
         overflow-x: hidden;
     }
     .menu-toggle {
