@@ -1012,8 +1012,8 @@ footer .dir img:hover{
         font-size: 1.2em;
     }
     #faq .faq-item.open .faq-answer {
-        max-height: 250px;
-        padding: 0px 20px 110px;
+        max-height: 450px;
+        padding: 0px 20px 135px;
     }
 }
 @media (min-width: 576px) and (max-width: 767.98px){
