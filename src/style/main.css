@@ -942,7 +942,9 @@ footer .dir img:hover{
         grid-template-columns: 1fr;
         gap: 10px;
     }
-
+    #numeros .card img{
+        width: 36px;
+    }
     #numeros .card h2 {
         font-size: 28px;
         font-weight: bold;
