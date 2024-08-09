@@ -747,6 +747,9 @@ footer .dir img:hover{
     }
 }
 @media (max-width: 575.98px){
+    html{
+        overflow-x: hidden;
+    }
     .menu-toggle {
         display: block;
     }
