@@ -866,7 +866,7 @@ footer .dir img:hover{
         display: none;
     }
     #home .mouse img{
-        width: 27px;
+        width: 28px;
     }
     #home .mouse {
         margin: 55px auto;
@@ -976,7 +976,7 @@ footer .dir img:hover{
         margin-bottom: 30px;
     }
     #vamos .container h1 {
-        font-size: 27px;
+        font-size: 23px;
         width: 100%;
     }
 
@@ -1011,7 +1011,7 @@ footer .dir img:hover{
     }
     #faq .faq-item.open .faq-answer {
         max-height: 250px;
-        padding: 0px 20px 90px;
+        padding: 0px 20px 110px;
     }
 }
 @media (min-width: 576px) and (max-width: 767.98px){
