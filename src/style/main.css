@@ -758,39 +758,40 @@ footer .dir img:hover{
     }
     header img{
         width: 130px;
-        height: 50px;
+        height: 46px;
     }
     header button{
         display: none;
     }
     #home{
         display: flex;
-        justify-content: end;
+        justify-content: center;
         align-items: center;
         margin: 0 auto;
         width: 100%;
     }
     #home .info{
-        width: 280px;
+        width: 80%;
         margin: 0 auto;
     }
     #home .container{
         flex-direction: column;
-        width: 300px;
-        justify-content: first baseline;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
         margin: 0 auto;
     }
     #home .info h1{
         font-size: 30px;
-        width: 300px;
+        width: 100%;
         font-weight: bold;
     }
     #home .info h2{
-        font-size: 14px;
+        font-size: 13px;
     }
     #home .info p{
         font-size: 13px;
-        width: 300px;
+        width: 100%;
     }
     #home .info button{
         width: 100%;
@@ -799,13 +800,30 @@ footer .dir img:hover{
     #home .mouse{
         position: relative;
         top: 50%;
-        left: -42%;
+        left: -43%;
     }
     #home .mouse img{
         width: 33px;
     }
+    #home .img-desk{
+        position: relative;
+        left: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    #home .img{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin: 0 auto;
+    }
     #home .img img{
-        width: 400px;
+        width: 100%;
+        margin: 50px auto;
+        align-items: center;
+        justify-content: center;
     }
     #servicos{
         height: 1990px;
@@ -829,30 +847,65 @@ footer .dir img:hover{
         width: 250px;
         margin-bottom: 8px;
     }
-    #como .container{
-        grid-template-columns: 1fr;
+    #como{
+        margin: 50px auto;
+    }
+    #como .info{
+        width: 90%;
+        justify-content: center;
+    }
+    #como .info h1{
+        font-size: 28px;
+        text-align: center;
         width: 100%;
-        gap: 10px;
+    }
+    #como .container{
+        grid-template-columns: 1fr 1fr;
+        width: 93%;
+        gap: 5px;
         margin: 0 auto;
+        align-items: center;
+        justify-content: center;
     }
     #como .card h3{
         font-family: 'Orbitron';
-        font-size: 16px;
+        font-size: 14px;
         width: 100%;
     }
     #como .card p{
         font-family: 'Aron';
-        font-size: 13px;
+        font-size: 12px;
         width: 100%;
     }
     #como .card{
         gap: 10px;
         display: flex;
         flex-direction: column;
-        text-align: center;
+        text-align: left;
+        justify-content: left;
     }
     #como .icon-como{
-        width: 30%;
+        width: 100%;
+        position: relative;
+        right: 0%;
+    }
+    #numeros{
+        width: 100%;
+    }
+    #numeros .container{
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    #numeros .card img{
+        width: 40px;
+    }
+    #numeros .card h2{
+        font-size: 30px;
+    }
+    #numeros .card p{
+        font-size: 11px;
     }
 }
 @media (min-width: 576px) and (max-width: 767.98px){
