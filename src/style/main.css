@@ -208,16 +208,18 @@ nav a{
     justify-content: center;
     margin: 0 auto;
 }
-#servicos{
+#servicos {
     background-color: #006994;
-    height: 900px;
+    height: 100%;
     justify-content: center;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     align-items: center;
+    padding: 100px;
 }
-#servicos .info{
+
+#servicos .info {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -226,72 +228,88 @@ nav a{
     margin: 0 auto;
     margin-bottom: 50px;
 }
-#servicos .info h2{
+
+#servicos .info h2 {
     color: #ffffff;
     font-family: 'Aron';
     font-size: 16px;
 }
-#servicos .info h1{
+
+#servicos .info h1 {
     font-family: 'Orbitron';
     font-size: 48px;
     color: #98FF98;
     font-weight: bold;
     margin-bottom: 10px;
-    width: 700px;
+    width: 100%;
+    max-width: 700px;
 }
-#servicos .container{
+
+#servicos .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
-#servicos .card{
+
+#servicos .card {
     background-color: white;
-    width: 300px;
-    height: 250px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     border-radius: 4px;
+    text-align: center;
 }
-#servicos .card .icon{
+
+#servicos .card .icon {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
 }
-#servicos .card h2{
+
+#servicos .card h2 {
     font-family: 'Orbitron';
     font-weight: normal;
     margin-bottom: 8px;
-    width: 200px;
     font-size: 21px;
+    width: 100%;
+    max-width: 200px;
 }
-#servicos .card p{
+
+#servicos .card p {
     font-family: 'Aron';
     font-size: 12px;
 }
-#como{
-    height: 900px;
+#como {
+    height: 100dvh;
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 20px;
 }
-#como .container{
+
+#como .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
-    width: 1100px;
+    width: 100%;
+    max-width: 1100px;
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
-#como .info{
+
+#como .info {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -299,32 +317,40 @@ nav a{
     flex-direction: column;
     margin: 0 auto;
     margin-bottom: 50px;
+    width: 100%;
 }
-#como .info h1{
+
+#como .info h1 {
     font-family: 'Orbitron';
     font-size: 44px;
     color: #006994;
     font-weight: bold;
     margin-bottom: 10px;
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
 }
-#como .card{
+
+#como .card {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     gap: 20px;
 }
-#como .card h3{
+
+#como .card h3 {
     font-family: 'Orbitron';
     font-size: 20px;
 }
-#como .card p{
+
+#como .card p {
     font-family: 'Aron';
     font-size: 13px;
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
 }
-#como .icon-como{
+
+#como .icon-como {
     background: linear-gradient(to right, #EF5A23, #992900);
     width: 100px;
     height: 100px;
@@ -332,16 +358,20 @@ nav a{
     justify-content: center;
     display: flex;
 }
-#como .btn{
+
+#como .btn {
     margin: 100px auto;
     display: flex;
-    justify-content: end;
-    align-items: end;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
-#como .btn button{
+
+#como .btn button {
     position: relative;
     padding: 10px 20px;
     width: 100%;
+    max-width: 300px;
     height: 45px;
     background: linear-gradient(to right, #EF5A23, #CF4D1D);
     color: white;
@@ -351,7 +381,8 @@ nav a{
     font-size: 14px;
     cursor: pointer;
 }
-#como .btn button::before{
+
+#como .btn button::before {
     content: '';
     position: absolute;
     top: 0;
@@ -363,27 +394,33 @@ nav a{
     transition: left 0.5s;
     animation: lightbeam 2s infinite;
 }
-#numeros{
+#numeros {
     background-color: #006994;
     height: 30dvh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 20px;
 }
-#numeros .container{
+
+#numeros .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 1100px;
+    width: 100%;
+    max-width: 1100px;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 20px;
 }
-#numeros .card img{
+
+#numeros .card img {
     animation: grow 2s infinite alternate;
 }
-#numeros .card{
+
+#numeros .card {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -391,13 +428,15 @@ nav a{
     text-align: center;
     margin: 0 auto;
 }
-#numeros .card h2{
+
+#numeros .card h2 {
     font-size: 45px;
     color: white;
     font-family: 'Orbitron';
     margin-bottom: 5px;
 }
-#numeros .card p{
+
+#numeros .card p {
     font-family: 'Aron';
     color: #D8D8D8;
     max-width: 150px;
@@ -767,151 +806,126 @@ footer .dir img:hover{
     header button{
         display: none;
     }
-    #home{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 20px auto;
-        width: 100%;
-        height: 100vh;
+    #home {
+        height: auto;
+        margin: 80px 10px;
+        padding: 0 10px;
     }
-    #home .info{
-        width: 80%;
-        margin: 0 auto;
-    }
-    #home .container{
+
+    #home .container {
         flex-direction: column;
-        width: 100%;
-        height: 100%;
         justify-content: center;
         align-items: center;
-        margin: 0 auto;
+        height: auto;
+        text-align: left;
     }
-    #home .info h1{
-        font-size: 30px;
+
+    #home .info h1 {
+        font-size: 32px;
         width: 100%;
         font-weight: bold;
     }
-    #home .info h2{
-        font-size: 13px;
-    }
-    #home .info p{
-        font-size: 13px;
-        width: 100%;
-    }
-    #home .info button{
-        width: 100%;
-        font-size: 12px;
-    }
-    #home .mouse{
-        position: relative;
-        top: 50%;
-        left: -45%;
-    }
-    #home .mouse img{
-        width: 30px;
-    }
-    #home .img-desk{
-        position: relative;
-        left: 10%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-    }
-    #home .img{
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        margin: 0 auto;
-    }
-    #home .img img{
-        width: 100%;
-        margin: 50px auto;
-        align-items: center;
-        justify-content: center;
-    }
-    #servicos{
-        height: 260dvh;
-        margin: 60px auto;
-    }
-    #servicos .container{
-        width: 300px;
-        grid-template-columns: 1fr;
-    }
-    #servicos .info{
-        margin: 30px auto;
-        text-align: center;
-        width: 300px;
-    }
-    #servicos .info h1{
-        font-size: 30px;
-        width: 350px;
-    }
-    #servicos .info h2{
-        font-size: 12px;
-        width: 250px;
-        margin-bottom: 8px;
-    }
-    #como{
-        margin: 50px auto;
-    }
-    #como .info{
-        width: 90%;
-        justify-content: center;
-    }
-    #como .info h1{
-        font-size: 28px;
-        text-align: center;
-        width: 100%;
-    }
-    #como .container{
-        grid-template-columns: 1fr 1fr;
-        width: 93%;
-        gap: 5px;
-        margin: 0 auto;
-        align-items: center;
-        justify-content: center;
-    }
-    #como .card h3{
-        font-family: 'Orbitron';
+
+    #home .info p {
         font-size: 14px;
         width: 100%;
     }
-    #como .card p{
-        font-family: 'Aron';
+
+    #home .info button {
+        width: 100%;
+        max-width: 250px;
+        height: 40px;
         font-size: 12px;
-        width: 100%;
     }
-    #como .card{
-        gap: 10px;
-        display: flex;
-        flex-direction: column;
+    #home .img-desk{
+        display: none;
+    }
+    #home .img-mobile {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+    }
+
+    #home .mouse {
+        margin: 15px auto;
+    }
+    #servicos {
+        padding: 70px 10px; /* Ajuste de padding para telas menores */
+    }
+
+    #servicos .container {
+        grid-template-columns: 1fr; /* Altera para uma coluna em telas pequenas */
+        gap: 15px;
+    }
+
+    #servicos .info h1 {
+        font-size: 28px;
+    }
+
+    #servicos .card {
+        max-width: 70%;
+        height: auto;
+        margin: 0 auto;
         text-align: left;
-        justify-content: left;
     }
-    #como .icon-como{
-        width: 100%;
-        position: relative;
-        right: 0%;
+
+    #servicos .card h2 {
+        font-size: 16px;
     }
-    #numeros{
-        width: 100%;
+
+    #servicos .card p {
+        font-size: 12px;
     }
-    #numeros .container{
-        width: 90%;
+    #como {
+        padding: 60px 10px;
+        height: 100%;
         justify-content: center;
         align-items: center;
-        margin: 0 auto;
     }
-    #numeros .card img{
-        width: 40px;
+
+    #como .container {
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
-    #numeros .card h2{
-        font-size: 30px;
+
+    #como .info h1 {
+        font-size: 26px;
     }
-    #numeros .card p{
-        font-size: 11px;
+
+    #como .card h3 {
+        font-size: 18px;
+    }
+
+    #como .card p {
+        font-size: 12px;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    #como .btn button {
+        max-width: 250px;
+        font-size: 12px;
+    }
+    #numeros {
+        margin: -100px auto;
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    #numeros .container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    #numeros .card h2 {
+        font-size: 28px;
+    }
+
+    #numeros .card p {
+        font-size: 12px;
+        max-width: 100px;
     }
 }
 @media (min-width: 576px) and (max-width: 767.98px){
@@ -1060,23 +1074,23 @@ footer .dir img:hover{
         position: relative;
         right: 0%;
     }
-    #numeros{
-        width: 100%;
+    #numeros {
+        height: auto;
+        padding: 20px 10px;
     }
-    #numeros .container{
-        width: 90%;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
+
+    #numeros .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
     }
-    #numeros .card img{
-        width: 40px;
+
+    #numeros .card h2 {
+        font-size: 28px;
     }
-    #numeros .card h2{
-        font-size: 30px;
-    }
-    #numeros .card p{
-        font-size: 11px;
+
+    #numeros .card p {
+        font-size: 12px;
+        max-width: 100px;
     }
 }
 @media (min-width: 768px) and (max-width: 991.98px){
