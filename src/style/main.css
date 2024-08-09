@@ -842,6 +842,7 @@ footer .dir img:hover{
         align-items: center;
         height: auto;
         text-align: left;
+        padding: 10px;
     }
 
     #home .info h1 {
@@ -864,16 +865,11 @@ footer .dir img:hover{
     #home .img-desk{
         display: none;
     }
-    #home .img-mobile {
-        width: 100%;
-        max-width: 300px;
-        height: auto;
-        display: block;
-        margin: 20px auto;
+    #home .mouse img{
+        width: 27px;
     }
-
     #home .mouse {
-        margin: 15px auto;
+        margin: 55px auto;
     }
     #servicos {
         padding: 70px 10px;
@@ -912,6 +908,7 @@ footer .dir img:hover{
     #como .container {
         grid-template-columns: 1fr;
         gap: 15px;
+        padding: 10px;
     }
 
     #como .info h1 {
