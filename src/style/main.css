@@ -806,10 +806,10 @@ footer .dir img:hover{
     #home .mouse{
         position: relative;
         top: 50%;
-        left: -43%;
+        left: -45%;
     }
     #home .mouse img{
-        width: 33px;
+        width: 30px;
     }
     #home .img-desk{
         position: relative;
@@ -832,15 +832,15 @@ footer .dir img:hover{
         justify-content: center;
     }
     #servicos{
-        height: 1990px;
-        margin: 50px auto;
+        height: 260dvh;
+        margin: 60px auto;
     }
     #servicos .container{
         width: 300px;
         grid-template-columns: 1fr;
     }
     #servicos .info{
-        margin: 50px auto;
+        margin: 30px auto;
         text-align: center;
         width: 300px;
     }
