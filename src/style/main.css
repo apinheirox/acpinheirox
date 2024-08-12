@@ -885,7 +885,7 @@ footer .dir img:hover {
     }
 
     #home .info h1 {
-        font-size: 32px;
+        font-size: 30px;
         width: 100%;
         font-weight: bold;
     }
@@ -957,7 +957,7 @@ footer .dir img:hover {
     }
 
     #como .info h1 {
-        font-size: 25px;
+        font-size: 26px;
         font-weight: bold;
         width: 90%;
     }
@@ -1036,7 +1036,7 @@ footer .dir img:hover {
         padding: 30px;
     }
     #faq h1 {
-        font-size: 24px;
+        font-size: 26px;
         max-width: 100%;
         text-align: center;
         margin: 10px auto;
@@ -1078,6 +1078,7 @@ footer .dir img:hover {
     #sobre .container-dir button{
         font-size: 12px;
         width: 100%;
+        height: 100%;
     }
     #sobre .container-dir p {
         font-size: 14px;
