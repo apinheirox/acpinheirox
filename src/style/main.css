@@ -887,7 +887,9 @@ footer .dir img:hover {
         width: 100%;
         font-weight: bold;
     }
-
+    #home .info h2{
+        font-size: 13px;
+    }
     #home .info p {
         font-size: 14px;
         width: 100%;
@@ -920,7 +922,10 @@ footer .dir img:hover {
     #servicos .info h1 {
         font-size: 28px;
     }
-
+    #servicos .info h2{
+        font-size: 13px;
+        width: 250px;
+    }
     #servicos .card {
         max-width: 70%;
         height: auto;
@@ -992,7 +997,9 @@ footer .dir img:hover {
         max-width: 100px;
     }
     #portfolio {
+        margin: 150px auto;
         padding: 20px 10px;
+        margin-bottom: 0px;
     }
     #portfolio .container {
         grid-template-columns: 1fr;
@@ -1003,7 +1010,7 @@ footer .dir img:hover {
         font-weight: bold;
     }
     #portfolio .info h2{
-        font-size: 14px;
+        font-size: 13px;
     }
     #portfolio .card h4 {
         font-size: 22px;
@@ -1021,7 +1028,7 @@ footer .dir img:hover {
         width: 100%;
     }
 
-    #vamos .container button {
+    #sobre .container .container button {
         max-width: 270px;
         font-size: 14px;
     }
@@ -1032,7 +1039,8 @@ footer .dir img:hover {
         font-size: 24px;
         max-width: 100%;
         text-align: center;
-        margin: 0 auto;
+        margin: 10px auto;
+        margin-bottom: 10px;
     }
     #faq .container {
         width: 100%;
@@ -1054,12 +1062,18 @@ footer .dir img:hover {
         max-height: 450px;
         padding: 0px 20px 135px;
     }
+    #sobre .container-dir{
+        padding: 15px;
+    }
     #sobre .container-esq img{
         width: 100%;
         height: auto;
     }
     #sobre .container-dir h1 {
         font-size: 28px;
+    }
+    #sobre .container-dir h2{
+        font-size: 13px;
     }
     #sobre .container-dir button{
         font-size: 10px;
@@ -1069,7 +1083,7 @@ footer .dir img:hover {
         font-size: 14px;
     }
     #final .card h1 {
-        font-size: 24px;
+        font-size: 22px;
     }
     #final .card button{
         font-size: 10px;
@@ -1090,6 +1104,7 @@ footer .dir img:hover {
         height: 100%;
     }
     footer .meio p {
+        font-size: 13px;
         margin-bottom: 10px;
     }
 }
