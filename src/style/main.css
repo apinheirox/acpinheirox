@@ -793,7 +793,9 @@ footer .container {
     text-align: center;
     flex-wrap: wrap;
 }
-
+footer .esq img{
+    height: 100%;
+}
 footer .meio p {
     font-family: 'Aron';
     margin: 0;
@@ -1023,6 +1025,9 @@ footer .dir img:hover {
     #portfolio .card {
         margin-bottom: 30px;
     }
+    #vamos .container button{
+        font-size: 12px;
+    }
     #vamos .container h1 {
         font-size: 23px;
         width: 100%;
@@ -1076,7 +1081,7 @@ footer .dir img:hover {
         font-size: 13px;
     }
     #sobre .container-dir button{
-        font-size: 10px;
+        font-size: 12px;
         width: 100%;
     }
     #sobre .container-dir p {
@@ -1086,7 +1091,7 @@ footer .dir img:hover {
         font-size: 22px;
     }
     #final .card button{
-        font-size: 10px;
+        font-size: 12px;
     }
     #final .card p {
         font-size: 13px;
