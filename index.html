@@ -147,7 +147,7 @@
         </div>
     </section>
     <section id="numeros">
-        <div class="container">
+        <div class="container" >
             <div class="card">
                 <img src="./images/icone-11.webp" alt="icone de ondas sonoras">
                 <h2>+2</h2>
@@ -290,6 +290,7 @@
         </div>
     </footer>
     <script>
+
         function toggleMenu() {
     var sidebar = document.getElementById("sidebar");
     if (sidebar.style.width === "250px") {
@@ -358,7 +359,6 @@ function throttle(func, limit) {
   };
 }
 
-// Uso
 window.addEventListener("resize", debounce(() => {
   console.log("Window resized");
 }, 250));
@@ -367,6 +367,24 @@ window.addEventListener("scroll", throttle(() => {
   console.log("Window scrolled");
 }, 100));
 
-    </script>
+function smoothScroll() {
+    let targetScrollTop = window.scrollY;
+
+    function step() {
+        const currentScrollTop = window.scrollY;
+        const distance = targetScrollTop - currentScrollTop;
+        const stepSize = Math.min(Math.abs(distance), 20);
+        if (Math.abs(distance) < 1) return;
+
+        window.scrollBy(0, stepSize * (distance > 0 ? 1 : -1));
+        requestAnimationFrame(step);
+    }
+
+    requestAnimationFrame(step);
+}
+
+window.addEventListener('scroll', smoothScroll);
+
+</script>
 </body>
 </html>

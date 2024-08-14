@@ -5,6 +5,7 @@
 }
 html, body{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 body{
     background-color: #ffffff;
@@ -1120,7 +1121,7 @@ footer .dir img:hover {
         display: none;
     }
     header{
-        width: 100%;
+        width: 90%;
     }
     header img{
         width: 130px;
@@ -1129,25 +1130,22 @@ footer .dir img:hover {
     header button{
         display: none;
     }
-    #home{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        width: 100%;
+    #home {
+        height: auto;
+        margin: 80px 10px;
+        padding: 0 10px;
     }
-    #home .info{
-        width: 80%;
-        margin: 0 auto;
-    }
-    #home .container{
+
+    #home .container {
         flex-direction: column;
-        width: 100%;
         justify-content: center;
         align-items: center;
-        margin: 0 auto;
+        height: auto;
+        text-align: left;
+        padding: 10px;
     }
-    #home .info h1{
+
+    #home .info h1 {
         font-size: 30px;
         width: 100%;
         font-weight: bold;
@@ -1155,133 +1153,586 @@ footer .dir img:hover {
     #home .info h2{
         font-size: 13px;
     }
-    #home .info p{
-        font-size: 13px;
-        width: 100%;
-    }
-    #home .info button{
-        width: 100%;
-        font-size: 12px;
-    }
-    #home .mouse{
-        position: relative;
-        top: 50%;
-        left: -43%;
-    }
-    #home .mouse img{
-        width: 33px;
-    }
-    #home .img-desk{
-        position: relative;
-        left: 10%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-    }
-    #home .img{
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        margin: 0 auto;
-    }
-    #home .img img{
-        width: 100%;
-        margin: 50px auto;
-        align-items: center;
-        justify-content: center;
-    }
-    #servicos{
-        height: 1990px;
-        margin: 50px auto;
-    }
-    #servicos .container{
-        width: 300px;
-        grid-template-columns: 1fr;
-    }
-    #servicos .info{
-        margin: 50px auto;
-        text-align: center;
-        width: 300px;
-    }
-    #servicos .info h1{
-        font-size: 30px;
-        width: 350px;
-    }
-    #servicos .info h2{
-        font-size: 12px;
-        width: 250px;
-        margin-bottom: 8px;
-    }
-    #como{
-        margin: 50px auto;
-    }
-    #como .info{
-        width: 90%;
-        justify-content: center;
-    }
-    #como .info h1{
-        font-size: 28px;
-        text-align: center;
-        width: 100%;
-    }
-    #como .container{
-        grid-template-columns: 1fr 1fr;
-        width: 93%;
-        gap: 5px;
-        margin: 0 auto;
-        align-items: center;
-        justify-content: center;
-    }
-    #como .card h3{
-        font-family: 'Orbitron';
+    #home .info p {
         font-size: 14px;
         width: 100%;
     }
-    #como .card p{
-        font-family: 'Aron';
+
+    #home .info button {
+        width: 100%;
+        max-width: 250px;
+        height: 40px;
+        font-size: 12px;
+    }
+    #home .img-desk{
+        display: none;
+    }
+    #home .mouse img{
+        width: 28px;
+    }
+    #home .mouse {
+        margin: 55px auto;
+    }
+    #servicos {
+        padding: 70px 10px;
+    }
+
+    #servicos .container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    #servicos .info h1 {
+        font-size: 28px;
+    }
+    #servicos .info h2{
+        font-size: 13px;
+        width: 250px;
+    }
+    #servicos .card {
+        max-width: 70%;
+        height: auto;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    #servicos .card h2 {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    #servicos .card p {
+        font-size: 12px;
+    }
+    #como {
+        padding: 60px 10px;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #como .container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    #como .info h1 {
+        font-size: 26px;
+        font-weight: bold;
+        width: 90%;
+    }
+
+    #como .card h3 {
+        font-size: 18px;
+    }
+
+    #como .card p {
         font-size: 12px;
         width: 100%;
+        max-width: 300px;
     }
-    #como .card{
-        gap: 10px;
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        justify-content: left;
-    }
-    #como .icon-como{
-        width: 100%;
-        position: relative;
-        right: 0%;
+
+    #como .btn button {
+        max-width: 250px;
+        font-size: 12px;
     }
     #numeros {
+        margin: -100px auto;
         height: auto;
         padding: 20px 10px;
     }
 
     #numeros .container {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 10px;
     }
-
+    #numeros .card img{
+        width: 36px;
+    }
     #numeros .card h2 {
         font-size: 28px;
+        font-weight: bold;
     }
 
     #numeros .card p {
         font-size: 12px;
         max-width: 100px;
     }
+    #portfolio {
+        margin: 150px auto;
+        padding: 20px 10px;
+        margin-bottom: 0px;
+    }
+    #portfolio .container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    #portfolio .info h1 {
+        font-size: 26px;
+        font-weight: bold;
+    }
+    #portfolio .info h2{
+        font-size: 13px;
+    }
+    #portfolio .card h4 {
+        font-size: 22px;
+    }
+
+    #portfolio .card img {
+        max-width: 100%;
+    }
+
+    #portfolio .card {
+        margin-bottom: 30px;
+    }
+    #vamos .container button{
+        font-size: 12px;
+    }
+    #vamos .container h1 {
+        font-size: 24px;
+        width: 100%;
+    }
+    #faq{
+        padding: 30px;
+    }
+    #faq h1 {
+        font-size: 26px;
+        max-width: 100%;
+        text-align: center;
+        margin: 10px auto;
+        margin-bottom: 10px;
+    }
+    #faq .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+    #faq .faq-item {
+        width: 100%;
+    }
+
+    #faq .faq-question {
+        font-size: 14px;
+    }
+
+    #faq .arrow {
+        font-size: 1.2em;
+    }
+    #faq .faq-item.open .faq-answer {
+        max-height: 450px;
+        padding: 0px 20px 135px;
+    }
+    #sobre .container-dir{
+        padding: 15px;
+    }
+    #sobre .container-esq img{
+        width: 100%;
+        height: auto;
+    }
+    #sobre .container-dir h1 {
+        font-size: 28px;
+    }
+    #sobre .container-dir h2{
+        font-size: 13px;
+    }
+    #sobre .container-dir button{
+        font-size: 12px;
+        width: 100%;
+        height: 100%;
+    }
+    #sobre .container-dir p {
+        font-size: 14px;
+    }
+    #final .card h1 {
+        font-size: 22px;
+    }
+    #final .card button{
+        font-size: 12px;
+    }
+    #final .card p {
+        font-size: 13px;
+    }
+    #sobre .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    footer .esq img{
+        height: 100%;
+    }
+    footer .meio p {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
 }
 @media (min-width: 768px) and (max-width: 991.98px){
+    html{
+        overflow-x: hidden;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    header nav, .icon-links {
+        display: none;
+    }
+    header{
+        width: 90%;
+    }
+    header img{
+        width: 130px;
+        height: 46px;
+    }
+    header button{
+        display: none;
+    }
+    #home {
+        height: auto;
+        margin: 180px 10px;
+        padding: 0 40px;
+    }
+    #home .container {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+    #home .info h1 {
+        font-size: 36px;
+        width: 100%;
+    }
+    #home .info p {
+        font-size: 14px;
+        width: 100%;
+    }
+    #home .info button {
+        width: 100%;
+    }
+    #home .img {
+        margin-top: 20px;
+    }
+    #home .mouse {
+        margin-top: 20px;
+    }
+    #servicos {
+        padding: 50px;
+    }
+    #servicos .info h1 {
+        font-size: 36px;
+        max-width: 100%;
+    }
+    #servicos .container {
+        width: 600px;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+        gap: 5px;
+        padding: 0 20px;
+    }
+    #servicos .card {
+        max-width: 250px;
+        height: 200px;
+        padding: 20px;
+    }
+    #servicos .card h2 {
+        font-size: 18px;
+        max-width: 100%;
+    }
+    #servicos .card p {
+        font-size: 11px;
+    }
+    #como {
+        padding: 15px;
+        height: auto;
+    }
+    #como .container {
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+        padding: 0 40px;
+    }
+    #como .info h1 {
+        font-size: 36px;
+        max-width: 100%;
+    }
+    #como .card {
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 10px;
+        align-items: left;
+        text-align: left;
+    }
+    #como .card h3 {
+        font-size: 18px;
+    }
+    #como .card p {
+        font-size: 12px;
+        max-width: 100%;
+    }
+    #como .icon-como {
+        width: 80px;
+        height: 80px;
+    }
+    #como .btn {
+        margin: 50px auto;
+    }
+    #como .btn button {
+        max-width: 250px;
+    }
+    #numeros {
+        height: auto;
+        padding: 15px;
+    }
+    #numeros .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+        padding: 0 20px;
+    }
+    #numeros .card h2 {
+        font-size: 36px;
+    }
+    #numeros .card p {
+        font-size: 12px;
+        max-width: 100%;
+    }
+    #sobre {
+        padding: 40px 0;
+    }
+    #sobre .container {
+        flex-direction: column;
+        padding: 0 15px;
+    }
+    #sobre .container-dir h1 {
+        font-size: 36px;
+        text-align: left;
+    }
+    #sobre .container-dir h2 {
+        font-size: 15px;
+        text-align: left;
+    }
+    #sobre .container-dir p {
+        font-size: 16px;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    #sobre .container-dir button {
+        width: 100%;
+        max-width: 280px;
+        margin-top: 15px;
+    }
+    footer {
+        padding: 15px;
+    }
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    footer .esq img {
+        height: auto;
+        max-width: 80px;
+    }
+    footer .meio p {
+        font-size: 14px;
+        padding: 5px;
+    }
+    footer .dir img {
+        margin: 5px;
+        width: 30px;
+        height: 30px;
+    }
 }
 @media (min-width: 992) and (max-width: 1199.98px) {
+    #home {
+        height: auto;
+        margin: 10px;
+    }
 
-}
-@media (min-width: 1200px) and (max-width: 1399.98px) {
+    #home .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        max-width: 90%;
+    }
 
-}
-@media (min-width: 1400px) {
+    #home .info h1 {
+        font-size: 36px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #home .info p {
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #home .info button {
+        width: 80%;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    #home .img {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    #home .img-mobile {
+        display: block;
+    }
+
+    #home .info button::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+        transform: skewX(-25deg);
+        transition: left 0.5s;
+        animation: lightbeam 2s infinite;
+    }
+
+    #home .mouse {
+        margin: 20px 0;
+    }
+    #servicos {
+        background-color: #006994;
+        height: 100%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+        padding: 100px;
+    }
+    
+    #servicos .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    
+    #servicos .info h2 {
+        color: #ffffff;
+        font-family: 'Aron';
+        font-size: 16px;
+    }
+    
+    #servicos .info h1 {
+        font-family: 'Orbitron';
+        font-size: 48px;
+        color: #98FF98;
+        font-weight: bold;
+        margin-bottom: 10px;
+        width: 100%;
+        max-width: 700px;
+    }
+    
+    #servicos .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1000px;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    #servicos .card {
+        background-color: white;
+        width: 100%;
+        max-width: 300px;
+        height: 230px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 4px;
+        text-align: left;
+    }
+    
+    #servicos .card .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    
+    #servicos .card h2 {
+        font-family: 'Orbitron';
+        font-weight: normal;
+        margin-bottom: 8px;
+        font-size: 21px;
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    #servicos .card p {
+        font-family: 'Aron';
+        font-size: 12px;
+    }
+    #como {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    #como .container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #como .info {
+        margin-bottom: 30px;
+    }
+
+    #como .info h1 {
+        font-size: 32px;
+        max-width: 90%;
+    }
+
+    #como .card {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #como .card h3 {
+        font-size: 18px;
+    }
+
+    #como .card p {
+        font-size: 12px;
+        max-width: 100%;
+    }
+
+    #como .icon-como {
+        width: 80px;
+        height: 80px;
+    }
+
+    #como .btn {
+        margin: 40px auto;
+    }
+
+    #como .btn button {
+        width: 80%;
+        max-width: 250px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    #como .btn button::before {
+        animation: lightbeam 1.5s infinite;
+    }
 
 }
